@@ -1,0 +1,15 @@
+[Unit]
+Description=haptic-feedback daemon
+
+[Service]
+User=root
+Type=simple
+PIDFile=/run/daemon.pid
+ExecStart=/usr/bin/haptic-feedback 'ILITEK ILITEK-TP' 2 40 100
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+TimeoutStopSec=3
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

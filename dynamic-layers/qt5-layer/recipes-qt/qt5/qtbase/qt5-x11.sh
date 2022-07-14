@@ -1,0 +1,12 @@
+#!/bin/sh
+export QT_QPA_PLATFORM=xcb
+export DISPLAY=:0
+#export QT_QPA_EGLFS_KMS_CONFIG=/etc/kms.conf
+#export QT_QPA_EGLFS_INTEGRATION=eglfs_kms
+#export QT_QPA_PLATFORM=eglfs
+#export QT_QPA_EGLFS_FB=/dev/fb1
+#export QT_QPA_EGLFS_WIDTH=1920
+#export QT_QPA_EGLFS_HEIGHT=1080
+#export QT_QPA_EGLFS_KMS_ATOMIC=1
+#export QT_QPA_EGLFS_NO_LIBINPUT=1
+#export QT_QPA_EGLFS_ALWAYS_SET_MODE=1

@@ -1,0 +1,14 @@
+[Unit]
+Description=beep service
+
+[Service]
+User=root
+Type=simple
+ExecStart=/usr/bin/beep 1000 200 3
+#Restart=always
+Type=oneshot
+Before=sysinit.target
+
+[Install]
+WantedBy=sysinit.target
+

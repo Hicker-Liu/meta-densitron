@@ -1,0 +1,7 @@
+[Match]
+Name=eth1
+
+[Network]
+Address=##ETH1_STATIC_CIDR##
+Gateway=##ETH1_STATIC_GATEWAY##
+DNS=##ETH1_STATIC_DNS##

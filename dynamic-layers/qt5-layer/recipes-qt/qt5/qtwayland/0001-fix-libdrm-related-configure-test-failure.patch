@@ -1,0 +1,35 @@
+diff --git a/src/client/configure.json b/src/client/configure.json
+index 73f23362..ccf6219a 100644
+--- a/src/client/configure.json
++++ b/src/client/configure.json
+@@ -149,7 +149,7 @@
+                     "#endif"
+                 ]
+             },
+-            "use": "egl drm"
++            "use": "egl "
+         },
+         "vulkan-server-buffer": {
+             "label": "Vulkan Buffer Sharing",
+diff --git a/src/compositor/configure.json b/src/compositor/configure.json
+index 42df2ddf..837c0a81 100644
+--- a/src/compositor/configure.json
++++ b/src/compositor/configure.json
+@@ -151,7 +151,7 @@
+                     "#endif"
+                 ]
+             },
+-            "use": "egl drm"
++            "use": "egl "
+         },
+         "dmabuf-client-buffer": {
+             "label": "Linux Client dma-buf Buffer Sharing",
+@@ -175,7 +175,7 @@
+                     "return 0;"
+                 ]
+             },
+-            "use": "egl drm"
++            "use": "egl "
+         },
+         "vulkan-server-buffer": {
+             "label": "Vulkan Buffer Sharing",
